@@ -12,7 +12,6 @@ A Next.js application for comparing NBA player statistics using the balldontlie 
   - Hover tooltips with stat explanations
   - Responsive design
 - **Visual Analytics**: Interactive radar charts for easy comparison
-- **Team Logos**: Color-coded team badges for each player
 - **Beautiful UI**: Dark gradient theme with glassmorphism effects
 - **Real-time Updates**: Debounced search with loading states
 
@@ -82,7 +81,6 @@ yarn dev
 │   └── RadarChartComparison.tsx # Radar chart visualization
 ├── lib/
 │   ├── api.ts                # API helpers
-│   ├── team-logos.ts         # Team logo/color mapping
 │   └── utils.ts              # Utility functions
 └── package.json
 ```
@@ -92,7 +90,6 @@ yarn dev
 ### Advanced Player Search
 - **Debounced search** (300ms) to avoid excessive API calls
 - **Position filters**: Filter by Guards (G), Forwards (F), or Centers (C)
-- **Team logos**: Color-coded team badges for each player
 - Filters out already selected players
 - Maximum 5 players can be selected
 - Real-time search results display
