@@ -2,6 +2,12 @@
 
 A Next.js application for comparing NBA player statistics using the balldontlie API.
 
+## 🚀 Live Demo
+
+**[View Live Application →](https://nba-analytics-sigma.vercel.app/)**
+
+Try it out: Compare up to 5 NBA players with interactive statistics, radar charts, and auto-generated insights!
+
 ## Features
 
 - **Advanced Search**: Search NBA players by name with position filters (Guards, Forwards, Centers)
