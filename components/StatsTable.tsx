@@ -39,6 +39,10 @@ export function StatsTable({ players, averages }: StatsTableProps) {
     { label: 'FT%', key: 'ft_pct' as const, format: (v: number) => `${(v * 100).toFixed(1)}%`, tooltip: 'Free Throw Percentage' },
   ]
 
+  const getAverage = (playerId: number) => {
+    return averages.find((avg) => avg.player_id === playerId)
+  }
+
   const handleSort = (key: string) => {
     if (sortColumn === key) {
       setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc')
@@ -62,10 +66,6 @@ export function StatsTable({ players, averages }: StatsTableProps) {
       }
       return valueB - valueA
     })
-  }
-
-  const getAverage = (playerId: number) => {
-    return averages.find((avg) => avg.player_id === playerId)
   }
 
   const formatValue = (
